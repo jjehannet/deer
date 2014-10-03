@@ -201,15 +201,14 @@ deer-launch()
                 deer-enter
                 deer-preview
                 ;;
-            h|$'\014')          # \014 is Ctrl+L, from Helm for Emacs
+            (h|$'\014')          # \014 is Ctrl+L, from Helm for Emacs
                 deer-leave
                 deer-preview
                 ;;
-            /|f)
+            (/|f)
                 deer-search
                 deer-preview
                 ;;
-
             q)
                 deer-restore
                 break
